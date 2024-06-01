@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">REShop</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="sign-in">Sign In</a>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- ============ search system section ============ -->
+
+    <section class="container">
+        <div class="search-container">
+            <input type="text" onkeyup="searchByName(this)" placeholder="search by name" class="search-by-name">
+            <input type="text" onkeyup="searchByCategory(this)" placeholder="search by category" class="search-by-category">
+            <div class="search-buttons">
+                <button class="all" onclick="resetProducts()">all</button>
+                <div class="search-by-rating">
+                    <h2>search by rating</h2>
+                    <div class="buttons">
+                        <button class="search-btn" onclick="searchByRating(4.5)">4.5</button>
+                        <button class="search-btn" onclick="searchByRating(3.5)">3.5</button>
+                        <button class="search-btn" onclick="searchByRating(2.5)">2.5</button>
+                    </div>
+                </div>
+
+                <div class="search-by-rating">
+                    <h2>search by price</h2>
+                    <div class="buttons">
+                        <button class="search-btn" onclick="searchByPrice(30)">under 30$</button>
+                        <button class="search-btn" onclick="searchByPrice(100)">under 100$</button>
+                        <button class="search-btn" onclick="searchByPrice(500)">under 500$</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product-container">
+        
+        </div>
+    </section>
+
+
+    
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
